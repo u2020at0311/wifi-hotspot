@@ -1,6 +1,6 @@
 # wifi-hotspot
 
-deploying a wifi hotspot with captive portal using coovachilli in raspbian and ubuntu
+<ruby>deploying a wifi hotspot<rt>無線LAN 集まる場所を配置します</rt></ruby> with captive portal using coovachilli in raspbian and ubuntu
 
 ## Requirements
 
