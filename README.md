@@ -44,7 +44,7 @@ sudo echo 'DAEMON_CONF="/etc/hostapd/hostapd.conf"' >> /etc/default/hostapd
 sudo vim /etc/hostapd/hostapd.conf
 ```
 
-<ruby>Change the following parameters<rt>次の媒介変数を変えましょう<rt/></ruby> in hostapd.conf file:
+<ruby>Change the following parameters<rt>次の媒介変数を変えましょう<rt/></ruby> <ruby>in hostapd.conf file<rt>host.apd.confファイルの</rt></ruby>:
 
 ```bash
 interface=wlan0 # Change this to your wireless device
@@ -68,7 +68,7 @@ Test and start hostapd:
 sudo hostapd -d /etc/hostapd/hostapd.conf
 ```
 
-If <ruby>all goes well<rt>全てがうまくいく</rt></ruby>, the hostapd daemon <ruby>should start and not quit<rt>開始して修了しない</rt></ruby>.
+If <ruby>all goes well<rt>全てがうまくいく</rt></ruby>, the hostapd daemon <ruby>should start and not quit<rt>開始して終了しない</rt></ruby>.
 
 ```console
 sudo service hostapd restart
@@ -94,7 +94,7 @@ sudo systemctl status hostapd
 
 ### Install and deploy MySQL server
 
-Preparing to package installation. MySQL password is set at “**raspbian**”. Of course you can put whatever you want.
+<ruby>Preparing to package installation<rt>包装設置(パッケージインストレーション)</rt></ruby>. MySQL password is set at “**raspbian**”. Of course you <ruby>can put whatever you want<rt>好きなように設定できる</rt></ruby>.
 
 ```console
 sudo apt-get install -y debconf-utils
