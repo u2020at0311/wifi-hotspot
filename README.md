@@ -1,8 +1,9 @@
-カタカナ語やジャパニイズエングリシッシュ語については、台湾の標準中国語を置き換え
+
+ カタカナ語やジャパニイズエングリシッシュ語については、適当な日本語単語か台湾の標準中国語で置き換え
 
 # wifi-hotspot
 
-<ruby>deploying a wifi hotspot<rt>無線LAN 集まる場所を配置します</rt></ruby> with <ruby>captive portal<rt>捕虜の入り口</rt></ruby> using coovachilli in raspbian and ubuntu
+<ruby>deploying a wifi hotspot<rt>無線局域網(LAN) 集まる場所を配置します</rt></ruby> with <ruby>captive portal<rt>捕虜の入り口</rt></ruby> using coovachilli in raspbian and ubuntu
 
 ## Requirements
 
@@ -18,7 +19,7 @@ In order to build a captive portal solution, we will need the following:
 
 * **FreeRADIUS** – a radius server for <ruby>provisioning and accounting<rt>準備することと計算すること</rt></ruby>.
 
-* **MySQL** – a database server <ruby>backing<rt>バックアップしている</rt></ruby> the radius server.
+* **MySQL** – a database server <ruby>backing<rt>支援(バックアップ)している</rt></ruby> the radius server.
 
 * **Nginx** – a proxy server.
 
@@ -26,7 +27,7 @@ In order to build a captive portal solution, we will need the following:
 
 ## RaspberryPi
 
-CoovaChilli <ruby>needs two network interfaces<rt>２つのネットワーク接点(インタフェース)が必要</rt></ruby>, we choose eth0 and wlan0.
+CoovaChilli <ruby>needs two network interfaces<rt>２つの網路接点(ネットワークインタフェース)が必要</rt></ruby>, we choose eth0 and wlan0.
 
 * eth0: The WAN interface that connect to the internet
 * wlan0: The wifi interface to which client connect
@@ -35,7 +36,7 @@ CoovaChilli <ruby>needs two network interfaces<rt>２つのネットワーク接
 
 ### Install and deploy hostapd
 
-Hostapd allows your computer to function as an Access Point (AP) WPA/WPA2 Authenticator. Since debian-based systems have pre-packaged version of hostapd, a simple command will install this package
+Hostapd allows your computer to function <ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. Since debian-based systems have <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
 
 ```console
 sudo apt-get install hostapd
@@ -43,7 +44,7 @@ sudo echo 'DAEMON_CONF="/etc/hostapd/hostapd.conf"' >> /etc/default/hostapd
 sudo vim /etc/hostapd/hostapd.conf
 ```
 
-Change the following parameters in hostapd.conf file:
+<ruby>Change the following parameters<rt>次の媒介変数を変えましょう<rt/></ruby> in hostapd.conf file:
 
 ```bash
 interface=wlan0 # Change this to your wireless device
