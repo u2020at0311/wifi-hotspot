@@ -68,7 +68,7 @@ Test and start hostapd:
 sudo hostapd -d /etc/hostapd/hostapd.conf
 ```
 
-If all goes well, the hostapd daemon should start and not quit.
+If <ruby>all goes well<rt>全てがうまくいく</rt></ruby>, the hostapd daemon <ruby>should start and not quit<rt>開始して修了しない</rt></ruby>.
 
 ```console
 sudo service hostapd restart
@@ -76,13 +76,13 @@ sudo service hostapd restart
 
 ### Starting hostapd at boot time
 
-Enable the service to start automatically at boot:
+Enable the service <ruby>to start automatically at boot<rt>起動時に自動実行するには</rt></ruby>:
 
 ```console
 sudo systemctl enable hostapd
 ```
 
-If you had issues trying to start hostapd in Ubuntu desktop, run the following command:
+If you <ruby>had issues<rt>問題があったら</rt></ruby> trying to start hostapd in Ubuntu desktop, <ruby>run the following command<rt>次のコマンドを実行しよう</rt></ruby>:
 
 ```console
 sudo nmcli radio wifi off
