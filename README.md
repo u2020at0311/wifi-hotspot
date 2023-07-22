@@ -1,6 +1,8 @@
+カタカナ語やジャパニイズエングリシッシュ語については、台湾の標準中国語を置き換え
+
 # wifi-hotspot
 
-<ruby>deploying a wifi hotspot<rt>無線LAN 集まる場所を配置します</rt></ruby> with captive portal using coovachilli in raspbian and ubuntu
+<ruby>deploying a wifi hotspot<rt>無線LAN 集まる場所を配置します</rt></ruby> with <ruby>captive portal<rt>捕虜の入り口</rt></ruby> using coovachilli in raspbian and ubuntu
 
 ## Requirements
 
@@ -14,17 +16,17 @@ In order to build a captive portal solution, we will need the following:
 
 * **hostapd** – a software access point capable of turning normal network interface cards into access points and authentication servers.
 
-* **FreeRADIUS** – a radius server for provisioning and accounting.
+* **FreeRADIUS** – a radius server for <ruby>provisioning and accounting<rt>準備することと計算すること</rt></ruby>.
 
-* **MySQL** – a database server backing the radius server.
+* **MySQL** – a database server <ruby>backing<rt>バックアップしている</rt></ruby> the radius server.
 
 * **Nginx** – a proxy server.
 
-* **daloRadius** – an advanced RADIUS web platform aimed at managing Hotspots and general-purpose ISP deployments.
+* **daloRadius** – an advanced RADIUS web platform aimed at managing Hotspots and <ruby>general-purpose<rt>汎用</rt></ruby> ISP <ruby>deployments<rt>展開</rt></ruby>.
 
 ## RaspberryPi
 
-CoovaChilli needs two network interfaces, we choose eth0 and wlan0.
+CoovaChilli <ruby>needs two network interfaces<rt>２つのネットワーク接点(インタフェース)が必要</rt></ruby>, we choose eth0 and wlan0.
 
 * eth0: The WAN interface that connect to the internet
 * wlan0: The wifi interface to which client connect
