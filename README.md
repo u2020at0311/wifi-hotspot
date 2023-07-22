@@ -7,7 +7,7 @@
 
 ## Requirements
 
-In order to build a captive portal solution, we will need the following:
+<ruby>In order to build<rt>構築するためには</rt></ruby> a captive portal solution, we will need the following:
 
 * **Raspbian/Ubuntu**  – A Linux distribution. In this article, we will be using Raspbian release 2017-11-29 or Ubuntu 16.04. Later versions should work fine.
 
@@ -36,7 +36,8 @@ CoovaChilli <ruby>needs two network interfaces<rt>２つの網路接点(ネッ�
 
 ### Install and deploy hostapd
 
-Hostapd allows your computer to function <ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. <ruby>Since debian-based systems have<rt>DEBIANが基礎の構造物らは持っているので</rt></ruby> <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
+Hostapd <ruby>allows your computer to function<rt>貴方の電算機を機能させてくれる</rt></ruby>
+<ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. <ruby>Since debian-based systems have<rt>DEBIANが基礎の構造物らは持っているので</rt></ruby> <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
 
 ```console
 sudo apt-get install hostapd
