@@ -145,7 +145,7 @@ sudo apt-get install -y freeradius freeradius-mysql
 Create <ruby>radius database<rt>radius 數據庫(データベース)</rt></ruby>.
 
 ```console
-mysqladmin -u root -p raspbian create radius
+mysqladmin -u root -p=raspbian create radius
 ```
 
 <ruby>Generate database tables<rt>數據庫の表を生成する</rt></ruby> <ruby>using MySQL schema<rt>MySQLの図表による体裁(意味不明)を使って</rt></ruby>
