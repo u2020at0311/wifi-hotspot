@@ -36,7 +36,7 @@ CoovaChilli <ruby>needs two network interfaces<rt>２つの網路接点(ネッ�
 
 ### Install and deploy hostapd
 
-Hostapd allows your computer to function <ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. Since debian-based systems have <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
+Hostapd allows your computer to function <ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. <ruby>Since debian-based systems have<rt>DEBIANが基礎の構造物らは持っているので</rt></ruby> <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
 
 ```console
 sudo apt-get install hostapd
