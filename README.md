@@ -37,7 +37,7 @@ CoovaChilli <ruby>needs two network interfaces<rt>２つの網路接点(ネッ�
 ### Install and deploy hostapd
 
 Hostapd <ruby>allows your computer to function<rt>貴方の電算機を機能させてくれる</rt></ruby>
-<ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. <ruby>Since debian-based systems have<rt>DEBIANが基礎の構造物らは持っているので</rt></ruby> <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
+<ruby>as an Access Point (AP) WPA/WPA2 Authenticator<rt>APのWPA/WPA2 認証する者として</rt></ruby>. <ruby>Since debian-based systems have<rt>DEBIANが基礎の構造物(システム)は持っているので</rt></ruby> <ruby>pre-packaged<rt>包装済み</rt></ruby> version of hostapd, a simple command will install this package
 
 ```console
 sudo apt-get install hostapd
@@ -96,6 +96,7 @@ sudo systemctl status hostapd
 ### Install and deploy MySQL server
 
 <ruby>Preparing to package installation<rt>包装設置(パッケージインストレーション)</rt></ruby>. MySQL password is set at “**raspbian**”. Of course you <ruby>can put whatever you want<rt>好きなように設定できる</rt></ruby>.
+
 
 ```console
 sudo apt-get install -y debconf-utils
