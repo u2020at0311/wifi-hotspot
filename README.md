@@ -183,7 +183,7 @@ client localhost {
 Configure the SQL radius module.
 
 ```console
-sudo vim /etc/freeradius/3.0/mods-enabled/sql
+sudo vim /etc/freeradius/3.0/mods-/sql
 ```
 Change the following parameters:
 
@@ -201,7 +201,7 @@ read_clients = yes
 Next link sql to modules available.
 
 ```console
-sudo ln -s /etc/freeradius/3.0/mods-available/sql /etc/freeradius/3.0/mods-enabled/sql
+sudo ln -s /etc/freeradius/3.0/mods-available/sql /etc/freeradius/3.0/mods-available/sql
 ```
 
 
