@@ -171,7 +171,7 @@ Edit client definition.
 sudo vim /etc/freeradius/3.0/clients.conf
 ```
 
-The <ruby>shared secret<rt>共有された秘密</rt></ruby> use to <ruby>"encrypt"<rt>暗号化する</rt></ruby> and <ruby>"sign"<rt>署名する</rt></ruby> packets between the <ruby>NAS<rt>NACのことか?</rt></ruby> and FreeRADIUS. This secret <ruby>must be changed<rt>変更されなければいけない</rt></ruby> <ruby>from the default<rt>怠慢(や棄権)から</rt></ruby>, otherwise <ruby>it is not a secret<rt>秘密ではない</rt></ruby> anymore!
+The <ruby>shared secret<rt>共有された秘密</rt></ruby> use to <ruby>"encrypt"<rt>暗号化する</rt></ruby> and <ruby>"sign"<rt>署名する</rt></ruby> packets between the <ruby>NAS<rt></rt></ruby> and FreeRADIUS. This secret <ruby>must be changed<rt>変更されなければいけない</rt></ruby> <ruby>from the default<rt>怠慢(や棄権)から</rt></ruby>, otherwise <ruby>it is not a secret<rt>秘密ではない</rt></ruby> anymore!
 
 ```bash
 client localhost { 
