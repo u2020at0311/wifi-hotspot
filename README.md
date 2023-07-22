@@ -95,7 +95,7 @@ sudo systemctl status hostapd
 
 ### Install and deploy MySQL server
 
-<ruby>Preparing to package installation<rt>包装設置(パッケージインストレーション)</rt></ruby>. MySQL password is set at “**raspbian**”. Of course you <ruby>can put whatever you want<rt>好きなように設定できる</rt></ruby>.
+<ruby>Preparing to package installation<rt>包装されたもの設置(パッケージインストレーション)</rt></ruby>. MySQL password is set at “**raspbian**”. Of course you <ruby>can put whatever you want<rt>好きなように設定できる</rt></ruby>.
 
 
 ```console
@@ -129,25 +129,25 @@ FreeRadius server <ruby>is also available<rt>大抵用意されている</rt></r
 
 ### Install and deploy FreeRADIUS server
 
-Install required packages.
+Install <ruby>required packages<rt>必要な包装されたもの</rt></ruby>.
 
 ```console
 sudo apt-get install -y freeradius freeradius-mysql 
 ```
 
-Create radius database.
+Create <ruby>radius database<rt>radius 數據庫(データベース)</rt></ruby>.
 
 ```console
 mysqladmin -u root -p raspbian create radius
 ```
 
-Generate database tables using MySQL schema.
+<ruby>Generate database tables<rt>數據庫の表を生成する</rt></ruby> <ruby>using MySQL schema<rt>MySQLの図表による体裁(意味不明)を使って</rt></ruby>
 
 ```console
 sudo cat /etc/freeradius/3.0/mods-config/sql/main/mysql/schema.sql | mysql -u root -p raspbian radius
 ```
 
-Create MySQL radius user and set privileges on radius database:
+Create MySQL radius user and set <ruby>privileges<rt>特権</rt></ruby> on radius database:
 
 ```console
 mysql -u root -p raspbian radius
@@ -163,7 +163,7 @@ Edit client definition.
 sudo vim /etc/freeradius/3.0/clients.conf
 ```
 
-The shared secret use to "encrypt" and "sign" packets between the NAS and FreeRADIUS. This secret must be changed from the default, otherwise it is not a secret anymore!
+The <ruby>shared secret<rt>共有された秘密</rt></ruby> use to <ruby>"encrypt"<rt>暗号化する</rt></ruby> and <ruby>"sign"<rt>署名する</rt></ruby> packets between the <ruby>NAS<rt>NACのことか?</rt></ruby> and FreeRADIUS. This secret <ruby>must be changed<rt>変更されなければいけない</rt></ruby> <ruby>from the default<rt>怠慢(や棄権)から</rt></ruby>, otherwise <ruby>it is not a secret<rt>秘密ではない</rt></ruby> anymore!
 
 ```bash
 client localhost { 
