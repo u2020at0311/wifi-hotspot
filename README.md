@@ -124,7 +124,7 @@ sudo systemctl enable mysql
 
 ## FreeRADIUS
 
-FreeRadius server is also available in Ubuntu’s and debian's repo, so we can simply install it using apt-get. 
+FreeRadius server <ruby>is also available<rt>大抵用意されている</rt></ruby> in Ubuntu’s and debian's repo, so we <ruby>can simply install it using apt-get<rt>apt-getを使って簡単に設置ができる</rt></ruby>.
 
 ### Install and deploy FreeRADIUS server
 
