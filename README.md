@@ -159,7 +159,7 @@ Create MySQL radius user and set <ruby>privileges<rt>特権</rt></ruby> on radiu
 ```console
 mysql -u root -p raspbian radius
 
-GRANT ALL PRIVILEGES ON radius.* to [freeradius_db_user]@[host_address] IDENTIFIED by '[freeradius_db_password]';
+GRANT ALL PRIVILEGES ON radius.* to [freeradius_db_user]@[host_address] witth grant option;
 ```
 
 ### Configure FreeRADIUS
